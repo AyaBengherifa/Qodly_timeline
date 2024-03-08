@@ -16,7 +16,7 @@ interface IVerticalTimelineProps extends webforms.ComponentProps {
   variant?: string;
 }
 const VerticalTimeline: FC<IVerticalTimelineProps> = ({
-  icon,
+ 
   iterator,
   variant,
   style,
@@ -111,17 +111,7 @@ const VerticalTimeline: FC<IVerticalTimelineProps> = ({
                 </EntityProvider>
               </div>
               <div className="flex items-center  relative">
-                <div className="w-4 h-4 bg-gray-400  rounded-full absolute top-2 transform -translate-x-1/2">
-                  <span
-                    className={cn(
-                      'fa fd-component',
-                      'fd-icon',
-                      icon,
-                      classNames,
-                      'w-2 h-2 fill-current text-gray-500 hover:text-gray-700 flex items-center justify-center',
-                    )}
-                  ></span>
-                </div>
+                <div className="w-4 h-4 bg-gray-400  rounded-full absolute top-2 transform -translate-x-1/2"></div>
 
                 {index !== entities.length - 1 && (
                   <div className="relative w-0.5 h-full bg-gray-400 top-5 "></div>

@@ -68,6 +68,9 @@ export default {
   },
   defaultProps: {
     iterable: true,
+    style: {
+      height: '90px',
+    },
     name: '',
     variant: 'value1',
 
