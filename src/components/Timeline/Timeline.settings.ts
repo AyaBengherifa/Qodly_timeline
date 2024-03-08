@@ -6,7 +6,7 @@ const commonSettings: TSetting[] = [
   {
     key: 'variant',
     label: 'Variant',
-    type: ESetting.COMBOBOX,
+    type: ESetting.SELECT,
     options: [
       { label: 'variant1', value: 'value1' },
       { label: 'variant2', value: 'value2' },

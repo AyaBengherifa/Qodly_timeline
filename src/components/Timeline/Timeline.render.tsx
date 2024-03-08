@@ -41,7 +41,7 @@ const Timeline: FC<ITimelineProps> = ({
 
     return () => ds.removeListener('changed', fetchData);
   }, [ds]);
-  console.log(orientation)
+  
   return (
     <>
       {ds?.initialValue !== undefined ? (

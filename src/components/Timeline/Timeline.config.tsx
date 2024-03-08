@@ -1,6 +1,6 @@
 import { EComponentKind, T4DComponentConfig } from '@ws-ui/webform-editor';
 import { Settings } from '@ws-ui/webform-editor';
-import { MdOutlineTextSnippet } from 'react-icons/md';
+import { FaTimeline } from 'react-icons/fa6';
 
 import TimelineSettings, { BasicSettings } from './Timeline.settings';
 
@@ -31,7 +31,7 @@ export default {
   info: {
     displayName: 'Timeline',
     exposed: true,
-    icon: MdOutlineTextSnippet,
+    icon: FaTimeline,
     events: [
       {
         label: 'On Click',
@@ -70,7 +70,7 @@ export default {
     iterable: true,
     name: '',
     variant: 'value1',
-  
+
     orientation: 'Vertical',
   },
 } as T4DComponentConfig<ITimelineProps>;
