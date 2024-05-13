@@ -74,7 +74,7 @@ const Timeline: FC<ITimelineProps> = ({
           )}
         </div>
       ) : (
-        <div className="flex h-full flex-col items-center justify-center rounded-lg border bg-purple-400 py-4 text-white">
+        <div className="flex flex-col items-center justify-center rounded-lg border bg-purple-400 py-4 text-white">
           <CgDanger className="mb-1 h-8 w-8" />
           <p>Missing a datasource</p>
         </div>
