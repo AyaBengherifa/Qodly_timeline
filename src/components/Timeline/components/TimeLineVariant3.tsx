@@ -69,7 +69,7 @@ const TimeLineV2: FC<ITimeLineV2Props> = ({
                 <div className="z-20 flex items-center order-1 bg-gray-400  w-4 h-4 rounded-full"></div>
                 <div className="order-1  rounded-lg  w-5/12 px-6 py-4">
                   <p className="text-sm text-gray-900 text-opacity-100">
-                    {' '}
+                    
                     <EntityProvider
                       index={index}
                       selection={ds}
