@@ -5,7 +5,7 @@ import { CgDanger } from 'react-icons/cg';
 import { ITimelineProps } from './Timeline.config';
 import VerticalTimeLine from './components/VerticalTimeLine';
 import HorizontalTimeLine from './components/HorizontalTimeLine';
-import TimeLineV2 from './components/TimeLineV2';
+import TimeLineV2 from './components/TimeLineVariant3';
 
 const Timeline: FC<ITimelineProps> = ({
   orientation,
