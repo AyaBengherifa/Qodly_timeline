@@ -145,7 +145,7 @@ const Timeline: FC<ITimelineProps> = ({
                 <div className="mb-8 flex justify-between items-center right-timeline">
                   <div className=" w-5/12"></div>
                   <div className="z-20 flex items-center order-1 bg-gray-400  w-4 h-4 rounded-full"></div>
-                  <div className="order-1  rounded-lg  w-5/12 px-6 py-4">
+                  <div className="order-1  rounded-lg  w-5/12 px-4 py-2">
                     <p className="text-sm text-gray-900 text-opacity-100">
                       <IteratorProvider>
                         <Element
@@ -163,8 +163,8 @@ const Timeline: FC<ITimelineProps> = ({
                 <div className="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
                   <div className="order-1 w-5/12"></div>
                   <div className="z-20 flex items-center order-1 bg-gray-400 w-4 h-4 rounded-full"></div>
-                  <div className="order-1 rounded-lg  w-5/12 px-6 py-4">
-                    <p className="text-sm font-medium leading-snug tracking-wide  text-opacity-100">
+                  <div className="order-1 rounded-lg  w-5/12 px-4 py-2">
+                  <p className="text-sm text-gray-900 text-opacity-100">
                       <IteratorProvider>
                         <Element
                           id="item2"
