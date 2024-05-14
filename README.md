@@ -6,18 +6,23 @@ Tags component for Qodly studio
 
 Customizable component for visualizing chronological data with customizable styling.
 Vertical timeline:
+
 ![Vertical Timeline](public/1.png)
 
 Horizontal timeline:
+
 ![Horizontal Timeline](public/2.png)
 
 Vertical timeline with two sections:
+
 ![Vertical Timeline V2](public/3.png)
 
 Horizontal timeline with two sections :
+
 ![Horizontal Timeline V2](public/4.png)
 
 Timeline Version 3:
+
 ![Timeline ](public/5.png)
 
 ## DataSource
