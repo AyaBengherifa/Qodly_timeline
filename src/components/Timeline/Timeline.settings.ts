@@ -67,12 +67,12 @@ const Settings: TSetting[] = [
     type: ESetting.GROUP,
     components: dataAccessSettings,
   },
-  ...load(DEFAULT_SETTINGS).filter('dataAccess'),
+  ...load(DEFAULT_SETTINGS).filter('dataAccess', 'background', 'appearance', 'font'),
 ];
 
 export const BasicSettings: TSetting[] = [
   ...commonSettings,
-  ...load(BASIC_SETTINGS).filter('dataAccess', 'style.overflow'),
+  ...load(BASIC_SETTINGS).filter('dataAccess', 'style.overflow', 'background', 'appearance', 'font'),
 ];
 
 export default Settings;
