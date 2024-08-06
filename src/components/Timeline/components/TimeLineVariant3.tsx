@@ -60,16 +60,15 @@ const TimeLineV2: FC<ITimeLineV2Props> = ({
       <div ref={connect} style={style} className={cn(className, classNames)}>
         {variant == 'value3' &&
           entities.map((item, index) => (
-            <div className="w-1/6 relative wrap overflow-hidden  " key={item.__KEY}>
+            <div className="w-1/6 relative" key={item.__KEY}>
               {index !== entities.length - 1 && (
-                <div className="border-2-2 absolute  border-opacity-20 border-gray-400 h-full border left-1/2"></div>
+                <div className="border-2-2 absolute  border-opacity-20 border-gray-400 h-full border left-1/2 top-12"></div>
               )}
-              <div className="mb-8 flex justify-between items-center right-timeline">
-                <div className=" w-5/12"></div>
+              <div className="flex justify-between items-center right-timeline">
+                <div className="w-5/12"></div>
                 <div className="z-20 flex items-center order-1 bg-gray-400  w-4 h-4 rounded-full"></div>
-                <div className="order-1  rounded-lg  w-5/12 px-6 py-4">
+                <div className="order-1 rounded-lg w-5/12 px-6 py-4"> 
                   <p className="text-sm text-gray-900 text-opacity-100">
-                    
                     <EntityProvider
                       index={index}
                       selection={ds}
@@ -88,7 +87,7 @@ const TimeLineV2: FC<ITimeLineV2Props> = ({
                   </p>
                 </div>
               </div>
-              <div className="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+              <div className="flex justify-between flex-row-reverse items-center w-full left-timeline">
                 <div className="order-1 w-5/12"></div>
                 <div className="z-20 flex items-center order-1 bg-gray-400 w-4 h-4 rounded-full"></div>
                 <div className="order-1 rounded-lg  w-5/12 px-6 py-4">
@@ -107,7 +106,7 @@ const TimeLineV2: FC<ITimeLineV2Props> = ({
                         deletable={false}
                         canvas
                       />
-                    </EntityProvider>
+                    </EntityProvider> 
                   </p>
                 </div>
               </div>
