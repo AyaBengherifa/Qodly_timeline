@@ -10,7 +10,6 @@ const commonSettings: TSetting[] = [
     options: [
       { label: 'variant1', value: 'value1' },
       { label: 'variant2', value: 'value2' },
-      { label: 'variant3', value: 'value3' },
     ],
     defaultValue: 'value1',
   },

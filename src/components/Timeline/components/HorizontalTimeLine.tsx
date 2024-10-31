@@ -125,7 +125,7 @@ const HorizontalTimeline: FC<IHorizontalTimelineProps> = ({
                   </EntityProvider>
                 </div>
                 {index !== entities.length - 1 && (
-                  <div className="flex w-40 bg-gray-200 relative left-3 h-0.5 dark:bg-gray-400"></div>
+                  <div className="flex w-40 bg-gray-200 relative left-3 h-0.5 dark:bg-gray-400" ></div>
                 )}
                 <div className="mt-3 sm:pe-8">
                   <div className="absolute top-1 left-2.5 z-10 flex items-center justify-center border-gray-200 border-2 shadow-2xl w-4 h-4 bg-gray-400  rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 "></div>

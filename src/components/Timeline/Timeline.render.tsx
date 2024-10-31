@@ -5,7 +5,6 @@ import { CgDanger } from 'react-icons/cg';
 import { ITimelineProps } from './Timeline.config';
 import VerticalTimeLine from './components/VerticalTimeLine';
 import HorizontalTimeLine from './components/HorizontalTimeLine';
-import TimeLineV2 from './components/TimeLineVariant3';
 
 const Timeline: FC<ITimelineProps> = ({
   orientation,
@@ -63,15 +62,7 @@ const Timeline: FC<ITimelineProps> = ({
               classNames={classNames}
             ></HorizontalTimeLine>
           )}
-          {variant == 'value3' && (
-            <TimeLineV2
-              iterator={iterator}
-              variant={variant}
-              style={style}
-              className={className}
-              classNames={classNames}
-            ></TimeLineV2>
-          )}
+      
         </div>
       ) : (
         <div className="flex flex-col items-center justify-center rounded-lg border bg-purple-400 py-4 text-white">
