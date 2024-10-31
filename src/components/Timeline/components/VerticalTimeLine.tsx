@@ -16,7 +16,6 @@ interface IVerticalTimelineProps extends webforms.ComponentProps {
   variant?: string;
 }
 const VerticalTimeline: FC<IVerticalTimelineProps> = ({
-  icon,
   iterator,
   variant,
   style,
@@ -98,7 +97,7 @@ const VerticalTimeline: FC<IVerticalTimelineProps> = ({
           ))}
         {variant == 'value2' &&
           entities.map((item, index) => (
-            <div className="flex items-center mb-2 relative" key={item.__KEY}>
+            <div className="flex items-start mb-2 relative" key={item.__KEY}>
               <div className="text-sm mr-2">
                 <EntityProvider
                   index={index}
@@ -116,26 +115,26 @@ const VerticalTimeline: FC<IVerticalTimelineProps> = ({
                   />
                 </EntityProvider>
               </div>
-              <div className="flex-grow flex justify-center">
+              <div className="flex-grow flex justify-center items-center">
                 <div className="w-4 h-4 bg-gray-400 rounded-full flex items-center justify-center ">
                   <span
                     className={cn(
                       'fa fd-component',
-                      'fd-icon',
-                      icon,
+                    
                       classNames,
                       'w-2 h-2 fill-current text-gray-500 hover:text-gray-700 flex items-center justify-center',
                     )}
                   ></span>
                 </div>
                 {index !== entities.length - 1 && (
-                  <div
-                    className="w-0.5 h-full bg-gray-400 absolute  "
-                    style={{
-                      top: 'calc(50% + 10px)',
-                      height: 'calc(100% + 20px)',
-                    }}
-                  ></div>
+                <div
+                className="absolute bg-gray-400 w-0.5 "
+                style={{
+                  height: 'calc(100% + 8px)', // Adjust as needed
+                  top: '70%',
+                  transform: 'translateY(-50%)',
+                }}
+              />
                 )}
               </div>
               <div className="text-sm">
@@ -147,7 +146,7 @@ const VerticalTimeline: FC<IVerticalTimelineProps> = ({
                 >
                   <Element
                     id="item2"
-                    className="h-full w-full"
+                    className="flex items-end justify-end h-full w-full"
                     role="item2"
                     is={resolver.StyleBox}
                     deletable={false}

@@ -60,7 +60,7 @@ const HorizontalTimeline: FC<IHorizontalTimelineProps> = ({
         <div className="flex ">
           {variant == 'value1' &&
             entities.map((item, index) => (
-              <div className="relative flex items-end top-12" key={item.__KEY}>
+              <div className="relative flex items-end " key={item.__KEY}>
                 <div className="absolute text-sm mb-2 ml-3">
                   <EntityProvider
                     index={index}
